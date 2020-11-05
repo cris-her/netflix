@@ -15,7 +15,7 @@ export default function App() {
       <Route path={ROUTES.BROWSE}>
         <Browse />
       </Route>
-      <Route path={ROUTES.HOME}>
+      <Route exact path={ROUTES.HOME}>
         <Home />
       </Route>
     </Router>
