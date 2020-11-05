@@ -29,7 +29,9 @@ export const Title = styled.h1`
 export const Item = styled.div`
   font-size: 1.625rem;
   font-weight: 400;
+  margin: auto;
   max-width: 670px;
+  width: 100%;
   text-align: left;
   color: #fff;
   margin-bottom: 8px;
