@@ -14,7 +14,7 @@ export const Container = styled.div`
 `;
 
 export const Input = styled.input`
-  max-width: 450px;
+  max-width: 500px;
   width: 100%;
   border: 0;
   padding: 10px;
@@ -30,7 +30,7 @@ export const Button = styled.button`
   color: white;
   text-transform: uppercase;
   padding: 0 32px;
-  font-size: 26px;
+  font-size: 1rem;
   border: 0;
   cursor: pointer;
 
@@ -38,9 +38,13 @@ export const Button = styled.button`
     background: #f40612;
   }
 
+  @media only screen and (min-width: 1450px) {
+    font-size: 1.875rem;
+    min-height: 70px;
+  }
+
   @media (max-width: 1000px) {
-    height: 50px;
-    font-size: 16px;
+    min-height: 40px;
     margin-top: 20px;
     font-weight: bold;
   }

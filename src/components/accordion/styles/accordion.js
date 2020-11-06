@@ -7,7 +7,6 @@ export const Container = styled.div`
 
 export const Inner = styled.div`
   display: flex;
-  padding: 70px 45px;
   flex-direction: column;
   max-width: 815px;
   margin: auto;
@@ -30,7 +29,7 @@ export const Item = styled.div`
   font-size: 1.625rem;
   font-weight: 400;
   margin: auto;
-  max-width: 670px;
+  max-width: 815px;
   width: 100%;
   text-align: left;
   color: #fff;
