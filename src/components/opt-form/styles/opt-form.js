@@ -6,6 +6,7 @@ export const Container = styled.div`
   height: 100%;
   margin-top: 20px;
   flex-wrap: wrap;
+  border-radius: 2em;
 
   @media (max-width: 1000px) {
     flex-direction: column;
@@ -16,9 +17,11 @@ export const Container = styled.div`
 export const Input = styled.input`
   max-width: 500px;
   width: 100%;
-  border: 0;
+  border: 1px solid rgb(140, 140, 140);
+  border-radius: 2px 0 0 2px;
   padding: 10px;
   height: 70px;
+  font-size: 16px;
   box-sizing: border-box;
 `;
 
@@ -30,8 +33,9 @@ export const Button = styled.button`
   color: white;
   text-transform: uppercase;
   padding: 0 32px;
-  font-size: 1rem;
+  font-size: 1.625rem;
   border: 0;
+  border-radius: 0 2px 2px 0;
   cursor: pointer;
 
   &:hover {
@@ -46,7 +50,6 @@ export const Button = styled.button`
   @media (max-width: 1000px) {
     min-height: 40px;
     margin-top: 20px;
-    font-weight: bold;
   }
 
   img {
@@ -61,12 +64,12 @@ export const Button = styled.button`
 `;
 
 export const Text = styled.p`
-  font-size: 19.2px;
+  font-size: 1.2rem;
   color: white;
   text-align: center;
 
   @media (max-width: 600px) {
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 22px;
   }
 `;

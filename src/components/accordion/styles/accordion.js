@@ -2,6 +2,7 @@ import styled from 'styled-components/macro';
 
 export const Container = styled.div`
   display: flex;
+  padding: 70px 45px;
   border-bottom: 8px solid #222;
 `;
 
