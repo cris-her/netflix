@@ -17,7 +17,6 @@ export default function Signin() {
   const handleSignin = (event) => {
     event.preventDefault();
 
-    // firebase work here!
     firebase
       .auth()
       .signInWithEmailAndPassword(emailAddress, password)
@@ -28,7 +27,7 @@ export default function Signin() {
         setEmailAddress('');
         setPassword('');
         setError(error.message);
-      })
+      });
   };
 
   return (
