@@ -10,7 +10,7 @@ export default function Signup() {
   const history = useHistory();
   const { firebase } = useContext(FirebaseContext);
 
-  const [firstName, setFirstName ] = useState('');
+  const [firstName, setFirstName] = useState('');
   const [emailAddress, setEmailAddress] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
