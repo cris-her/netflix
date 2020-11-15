@@ -1,4 +1,5 @@
-import React from 'react';
+/* eslint-disable no-shadow */
+import React, { useState } from 'react';
 import { Link as ReactRouterLink } from 'react-router-dom';
 
 import {
@@ -14,6 +15,9 @@ import {
   Picture,
   Dropdown,
   Profile,
+  Search,
+  SearchIcon,
+  SearchInput,
 } from './styles/header';
 
 export default function Header({ bg = true, children, ...restProps }) {
@@ -65,5 +69,23 @@ Header.Logo = function HeaderLogo({ to, ...restProps }) {
     <ReactRouterLink to={to}>
       <Logo {...restProps} />
     </ReactRouterLink>
+  );
+};
+
+Header.Search = function HeaderSearch({ searchTerm, setSearchTerm, ...restProps }) {
+  const [searchActive, setSearchActive] = useState(false);
+
+  return (
+    <Search {...restProps}>
+      <SearchIcon onClick={() => setSearchActive((searchActive) => !searchActive)}>
+        <img src="/images/icons/search.png" alt="Search" />
+      </SearchIcon>
+      <SearchInput
+        value={searchTerm}
+        onChange={({ target }) => setSearchTerm(target.value)}
+        placeholder="Search films and series"
+        active={searchActive}
+      />
+    </Search>
   );
 };
