@@ -1,6 +1,7 @@
 /* eslint-disable no-nested-ternary */
 /* eslint-disable react/jsx-no-undef */
 import React, { useContext, useState, useEffect } from 'react';
+import { FooterContainer } from './footer';
 import { SelectProfileContainer } from './profiles';
 import { FirebaseContext } from '../context/firebase';
 import { Loading, Header, Card } from '../components';
@@ -84,9 +85,13 @@ export function BrowseContainer({ slides }) {
                 </Card.Item>
               ))}
             </Card.Entities>
+            <Card.Feature category={category}>
+              <></>
+            </Card.Feature>
           </Card>
         ))}
       </Card.Group>
+      <FooterContainer />
     </>
   ) : (
     <SelectProfileContainer user={user} setProfile={setProfile} />

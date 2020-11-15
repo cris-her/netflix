@@ -80,6 +80,7 @@ export const Image = styled.img`
   height: auto;
   padding: 0;
   margin: 0;
+  border-radius: 4px;
 `;
 
 export const Item = styled.div`
