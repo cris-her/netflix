@@ -56,6 +56,7 @@ export function BrowseContainer({ slides }) {
             futile attempt to feel like he's part of the world around him. Isolated, bullied and disregarded by society,
             Fleck begins a slow descent into madness as he transforms into the criminal mastermind known as the Joker.
           </Header.Text>
+          <Header.PlayButton>Play</Header.PlayButton>
         </Header.Feature>
       </Header>
     </>
