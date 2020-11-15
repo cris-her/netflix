@@ -1,6 +1,9 @@
+/* eslint-disable no-nested-ternary */
+/* eslint-disable react/jsx-no-undef */
 import React, { useContext, useState } from 'react';
 import { SelectProfileContainer } from './profiles';
 import { FirebaseContext } from '../context/firebase';
+import { Loading } from '../components';
 
 export function BrowseContainer({ slides }) {
   const [profile, setProfile] = useState({});
@@ -8,5 +11,13 @@ export function BrowseContainer({ slides }) {
   const { firebase } = useContext(FirebaseContext);
   const user = firebase.auth().currentUser || {};
 
-  return <SelectProfileContainer user={user} setProfile={setProfile} />;
+  return profile.displayName ? (
+    loading ? (
+      <Loading src={user.photoURL} />
+    ) : (
+      <Loading.ReleaseBody />
+    )
+  ) : (
+    <SelectProfileContainer user={user} setProfile={setProfile} />
+  );
 }
