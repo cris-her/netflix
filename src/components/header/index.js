@@ -36,12 +36,11 @@ Header.Dropdown = function HeaderDropdown({ children, ...restProps }) {
   return <Dropdown {...restProps}>{children}</Dropdown>;
 };
 
-
 Header.Text = function HeaderText({ children, ...restProps }) {
   return <Text {...restProps}>{children}</Text>;
 };
 
-Header.TextLink = function HeaderLink({ children, ...restProps}) {
+Header.TextLink = function HeaderLink({ children, ...restProps }) {
   return <Link {...restProps}>{children}</Link>;
 };
 
