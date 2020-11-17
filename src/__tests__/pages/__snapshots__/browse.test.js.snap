@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Browse /> renders the browse page with <SelectProfileContainer /> 1`] = `
+<div
+  class="header__Container-djltcn-1 kWSTgG"
+>
+  <a
+    href="/"
+  >
+    <img
+      alt="Netflix"
+      class="header__Logo-djltcn-2 hxjAVL"
+      src="logo.svg"
+    />
+  </a>
+</div>
+`;
