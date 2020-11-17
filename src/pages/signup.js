@@ -65,7 +65,7 @@ export default function Signup() {
               autoComplete="off"
               onChange={({ target }) => setPassword(target.value)}
             />
-            <Form.Submit disabled={isInvalid} type="submit">
+            <Form.Submit disabled={isInvalid} type="submit" data-testid="sign-up">
               Sign Up
             </Form.Submit>
 
