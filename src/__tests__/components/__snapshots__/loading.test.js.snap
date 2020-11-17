@@ -8,7 +8,7 @@ exports[`<Loading /> renders the <Loading /> 1`] = `
   <img
     class="sc-gsTCUz bobqpP"
     data-testid="loading-picture"
-    src="/images/users//images/karl.png.png"
+    src="/images/users//images/emi.png.png"
   />
 </div>
 `;

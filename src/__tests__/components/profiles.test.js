@@ -9,7 +9,7 @@ describe('<Profiles />', () => {
         <Profiles.Title>Who's watching?</Profiles.Title>
         <Profiles.List>
           <Profiles.User onClick={() => {}}>
-            <Profiles.Picture src="/images/karl.png" data-testid="profile-picture" />
+            <Profiles.Picture src="/images/emi.png" data-testid="profile-picture" />
             <Profiles.Name>Emi</Profiles.Name>
           </Profiles.User>
         </Profiles.List>
@@ -41,4 +41,3 @@ describe('<Profiles />', () => {
     expect(container.firstChild).toMatchSnapshot();
   });
 });
-q
