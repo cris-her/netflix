@@ -52,4 +52,3 @@ describe('<Form />', () => {
     expect(container.firstChild).toMatchSnapshot();
   });
 });
-

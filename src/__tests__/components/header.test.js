@@ -89,4 +89,3 @@ describe('<Header />', () => {
     expect(container.firstChild).toMatchSnapshot();
   });
 });
-
